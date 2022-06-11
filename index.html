@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="snake.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- div -->
+    <div class="navigation">
+
+        <!-- div -->
+        <div class="userBx">
+            <div class="imgBx">
+                <img src="img/jsr.jpg">
+            </div>
+            <p class="username"> JaseerZoiydi</p>
+        </div>
+        <!-- end_div -->
+
+        <!-- div -->
+        <div  class="menuToggle">
+            <ion-icon name="caret-down-outline" class=""></ion-icon>
+        </div>
+        <!-- end_div -->
+        
+        <!-- ul -->
+        <ul class="menu">
+            <li><a href="https://jaseerzoiydi.github.io/Profile-Website-/"><ion-icon name="person-outline"></ion-icon>Profile Website</a></li>
+            <li><a href="https://github.com/JaseerZoiydi"><ion-icon name="logo-github"></ion-icon>GitHub</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100054832503263"><ion-icon name="logo-facebook"></ion-icon>Facebook</a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon>Twitter</a></li>
+            <li><a href="#"><ion-icon name="mail-outline"></ion-icon></ion-icon>Gmail</a></li>
+            <li><a href="#footer"><ion-icon name="alert-outline"></ion-icon>About</a></li>
+        </ul>
+        <!-- end_ul -->
+
+    </div>
+    <!-- end_div -->
+    
+    <!-- header -->
+    <header>
+
+        <h1>
+            JoSnakeGame.com
+        </h1>
+
+    </header>
+    <!-- end_header -->
+
+
+    <br>
+    <!-- div -->
+    <div class="c">
+        <canvas id="canvas" width="500" height="500"></canvas>
+    </div>
+    <!-- end_div -->
+
+    <!-- footer -->
+    <footer id="footer"> 
+
+        <p>
+            <span><i class="fas fa-copyright"></i></span>Copyrights @ JaseerZoiydi
+        </p>
+
+    </footer>
+    <!-- end_footer -->
+
+
+    <!-- Scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function(){
+            navigation.classList.toggle('active')
+        }
+    </script>
+    <script src="snake.js"></script>
+</body>
+</html>
